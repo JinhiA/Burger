@@ -4,7 +4,7 @@ const connection = require('../config/connection.js');
 const orm = {
 
   selectAll: function (cb) {
-    var queryString = "SELECT * FROM burgers";
+    const queryString = "SELECT * FROM burgers";
     connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
@@ -14,7 +14,7 @@ const orm = {
   },
 
   insertOne: function (burger, cb) {
-    var queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
+    const queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
     connection.query(queryString, [burger], function (err, result) {
       if (err) {
         throw err;s
@@ -24,7 +24,7 @@ const orm = {
   },
 
   updateOne: function (id, cb) {
-    var queryString = "UPDATE burgers SET devoured = true WHERE id = ?";
+   const queryString = "UPDATE burgers SET devoured = true WHERE id = ?";
 
     connection.query(queryString, [id], function (err, result) {
       if (err) {
