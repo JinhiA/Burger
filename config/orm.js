@@ -1,6 +1,5 @@
 const connection = require('../config/connection.js');
 
-
 const orm = {
 
   //mysql command to select all burgers
