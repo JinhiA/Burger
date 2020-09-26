@@ -8,10 +8,10 @@
         <li>
             {{this.id}}. {{this.burger_name}}
 
-            {{!-- <form action="/{{this.id}}?_method=PUT" method="POST"> --}}
+            <form>
                 <input type="hidden" name="devoured" value="false">
-                <button class="devourButton btn-warning btn-sm" data-id={{this.id}} data-devoured={{this.devoured}} type="submit">Eat Me!</button>
-            {{!-- </form> --}}
+                <button type="submit" class="devourButton btn-warning btn-sm" data-id={{this.id}} data-devoured={{this.devoured}} type="submit">Eat Me!</button>
+            </form> 
 
         </li>
         {{/unless}} {{/each}}
