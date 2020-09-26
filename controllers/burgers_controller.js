@@ -18,7 +18,8 @@ router.get("/", function (req, res) {
 // data posted will create a new burger
 router.post("/", function (req, res) {
     burger.insertOne(req.body.burger_name, function (result) {
-        res.json({id:result.insertId});
+        // res.json({id:result.insertId});
+        res.end();
     });
 });
 
