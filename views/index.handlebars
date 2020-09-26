@@ -8,10 +8,10 @@
         <li>
             {{this.id}}. {{this.burger_name}}
 
-            <form>
+            {{!-- <form action="/{{this.id}}?_method=PUT" method="POST"> --}}
                 <input type="hidden" name="devoured" value="false">
-                <button type="submit" class="devourButton btn-warning btn-sm" data-id={{this.id}} data-devoured={{this.devoured}} type="submit">Eat Me!</button>
-            </form> 
+                <button class="devourButton btn-warning btn-sm" data-id={{this.id}} data-devoured={{this.devoured}} type="submit">Eat Me!</button>
+            {{!-- </form> --}}
 
         </li>
         {{/unless}} {{/each}}
@@ -32,7 +32,7 @@
 <div id='add'>
     <h2>Add a Burger: </h2>
 
-    <form class="create-update-form" action="/" method="POST">
+    <form class="create-update-form" method="POST">
         <div class="form-group">
             <label for="dab">Burger Name:</label>
             <input type="text" id="dab" name="burger_name">
