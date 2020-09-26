@@ -7,7 +7,7 @@ This application is my first full stack application with a front end implemented
 
 The user may enter any burger name to add to "Burgers to Devour" menu, this also adds the new burger entry into the MySQL database. The initial burger entry is added as available on the menu and placed on the left side of the screen. The user may then eat any burger by clicking on it, which moves into the column right beside it and updates its status accordingly in the database, showing it be have been devoured! 
 
-![screenshot](/img/burgerhome.png)
+![screenshot](img/burgerhome.png)
 
 
 
